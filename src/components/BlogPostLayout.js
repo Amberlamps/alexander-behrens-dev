@@ -2,7 +2,6 @@ import React from 'react'
 import { View, Link, useCurrentRoute } from 'react-navi'
 import { MDXProvider } from '@mdx-js/react'
 import withUtterances from 'with-utterances';
-import siteMetadata from '../siteMetadata'
 import ArticleMeta from './ArticleMeta'
 import ContentWrapper from './ContentWrapper';
 import styles from './BlogPostLayout.module.css'
