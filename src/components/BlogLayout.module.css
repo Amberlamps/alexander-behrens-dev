@@ -1,0 +1,14 @@
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.44rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-rendering: optimizeLegibility;
+  padding: 1rem 0rem;
+}
+.title > a {
+  color: var(--header-font-color-dark);
+  text-decoration: none;
+}

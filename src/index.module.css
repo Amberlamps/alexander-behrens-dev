@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Lato:400,400i,700');
+
+:root {
+  --primary-color: #D90429;
+  --header-font-color: #fff;
+  --header-font-color-dark: #8D99AE;
+  --header-background-color: #2B2D42;
+  --footer-font-color: #EF233C;
+}
+
+:global * {
+  box-sizing: border-box;
+}
+
+:global html {
+  color: rgba(0, 0, 0, 0.9);
+  font: 100%/1.75 Lato, sans-serif;
+  background-color: #EDF2F4;
+}
+
+:global body {
+  font-kerning: normal;
+  font-family: 'Lato',sans-serif;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+:global(pre),
+:global(code) {
+  font-family: Consolas, Menlo, Monaco, source-code-pro, "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+:global pre {
+  overflow: auto;
+  padding: 1em;
+}
+
+:global a {
+  color: var(--primary-color);
+}
+:global a:hover {
+  text-decoration: none;
+}
+
+:global p,
+:global pre,
+:global ul,
+:global ol {
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+}

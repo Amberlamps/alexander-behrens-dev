@@ -1,0 +1,26 @@
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 2.625rem;
+  text-rendering: optimizeLegibility;
+  padding: 3rem 0rem 1.5rem;
+}
+.title a {
+  color: var(--header-font-color);
+  text-decoration: none;
+}
+
+.articlesList,
+.articlesList > li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.625rem;;
+}
+
+.footer {
+  margin-top: 7rem;
+  margin-bottom: 0.5rem;
+}
