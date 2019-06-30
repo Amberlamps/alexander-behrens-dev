@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 42rem;
+  padding: 0rem 1rem;
 }
 
 .header {

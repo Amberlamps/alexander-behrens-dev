@@ -4,6 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router } from "react-navi";
 import "./index.module.css";
+import "./fontello/css/fontello.css"
 import routes from "./routes";
 import * as serviceWorker from "./serviceWorker";
 

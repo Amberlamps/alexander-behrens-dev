@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Link, useCurrentRoute } from 'react-navi'
 import { MDXProvider } from '@mdx-js/react'
+import withUtterances from 'with-utterances';
 import siteMetadata from '../siteMetadata'
 import ArticleMeta from './ArticleMeta'
 import ContentWrapper from './ContentWrapper';
@@ -66,4 +67,4 @@ function BlogPostLayout({ blogRoot }) {
   )
 }
 
-export default BlogPostLayout
+export default withUtterances(BlogPostLayout, 'Amberlamps/alexander-behrens-dev', 'github-light', 'title');

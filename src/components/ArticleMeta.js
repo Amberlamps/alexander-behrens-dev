@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ContentWrapper from './ContentWrapper';
+import Button from './Button';
 import { formatDate } from '../utils/formats'
 import { getGravatarURL } from '../utils/getGravatarURL'
 import styles from './ArticleMeta.module.css'
@@ -31,7 +32,15 @@ function ArticleMeta({ blogRoot, meta, readingTime, className }) {
       `}>
         <img src={photoURL} alt="Me" />
         <div className={styles.information}>
-          <div>Alexander Behrens</div>
+          <div className={styles.author}>
+            <span>Alexander Behrens</span>
+            <span className={styles.buttons}>
+              <Button name="github-circled-1" url="https://github.com/Amberlamps"></Button>
+              <Button name="linkedin" url="https://www.linkedin.com/in/alexander-behrens-4b2a7772/"></Button>
+              <Button name="twitter" url="https://twitter.com/amberlamps84"></Button>
+              <Button name="stackoverflow" url="https://stackexchange.com/users/1225680/amberlamps"></Button>
+            </span>
+          </div>
           <small className={styles.ArticleMeta}>
             <time dateTime={meta.date.toUTCString()}>{formatDate(meta.date)}</time>
             {readingTimeElement || null}

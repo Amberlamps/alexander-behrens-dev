@@ -9,6 +9,7 @@ import siteMetadata from '../siteMetadata'
 import NotFoundPage from './NotFoundPage'
 import LoadingIndicator from './LoadingIndicator'
 import ContentWrapper from './ContentWrapper';
+import Button from './Button';
 import styles from './BlogLayout.module.css'
 
 function BlogLayout({ blogRoot, isViewingIndex }) {
@@ -24,9 +25,32 @@ function BlogLayout({ blogRoot, isViewingIndex }) {
       !isViewingIndex && (
         <ContentWrapper header>
           <header>
-            <h3 className={styles.title}>
-              <Link href={blogRoot}>{siteMetadata.title}</Link>
-            </h3>
+            <div className={styles.topline}>
+              <h3 className={styles.title}>
+                <Link href={blogRoot}>{siteMetadata.title}</Link>
+              </h3>
+              <div className={styles.buttons}>
+                <Button name="github-circled-1" url="https://github.com/Amberlamps/alexander-behrens-dev"></Button>
+                <Button name="rss" url="/rss.xml"></Button>
+              </div>
+            </div>  
+          </header>
+        </ContentWrapper>
+      )}
+
+      {
+      isViewingIndex && (
+        <ContentWrapper header>
+          <header>
+            <div className={styles.topline}>
+              <h3 className={styles.title}>
+                <Link href={blogRoot}>/start</Link>
+              </h3>
+              <div className={styles.buttons}>
+                <Button name="github-circled-1" url="https://github.com/Amberlamps/alexander-behrens-dev"></Button>
+                <Button name="rss" url="/rss.xml"></Button>
+              </div>
+            </div>  
           </header>
         </ContentWrapper>
       )}

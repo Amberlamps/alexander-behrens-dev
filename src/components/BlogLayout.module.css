@@ -8,7 +8,19 @@
   text-rendering: optimizeLegibility;
   padding: 1rem 0rem;
 }
+
+.buttons > a,
 .title > a {
   color: var(--header-font-color-dark);
   text-decoration: none;
+}
+
+.buttons {
+  font-size: 1.2rem;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
