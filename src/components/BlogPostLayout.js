@@ -39,27 +39,6 @@ function BlogPostLayout({ blogRoot }) {
             }}>
               <MDXComponent />
             </MDXProvider>
-            <footer className={styles.footer}>
-              <h3 className={styles.title}>
-                <Link href={blogRoot}>
-                  {siteMetadata.title}
-                </Link>
-              </h3>
-              <section className={styles.links}>
-                {
-                  data.previousDetails &&
-                  <Link className={styles.previous} href={data.previousDetails.href}>
-                    ← {data.previousDetails.title}
-                  </Link>
-                }
-                {
-                  data.nextDetails &&
-                  <Link className={styles.next} href={data.nextDetails.href}>
-                    {data.nextDetails.title} →
-                  </Link>
-                }
-              </section>
-            </footer>
           </ContentWrapper>
         </article>
       }
