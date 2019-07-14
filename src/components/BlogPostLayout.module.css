@@ -1,6 +1,6 @@
 .title {
-  font-family: 'Bree serif', serif;
-  font-weight: 900;
+  font-family: 'Literata', serif;
+  font-weight: 700;
   line-height: 1.1;
   text-rendering: optimizeLegibility;
 }
@@ -59,8 +59,8 @@
 .content h5,
 .content h6 {
   color: var(--primary-color);
-  font-family: 'Bree Serif';
-  font-weight: 900;
+  font-family: 'Literata';
+  font-weight: 700;
   line-height: 1.1;
   margin-top: 3.5rem;
   text-rendering: optimizeLegibility;

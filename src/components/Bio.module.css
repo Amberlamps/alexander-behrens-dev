@@ -2,6 +2,10 @@
   display: flex;
   margin-bottom: 4.375rem;
 }
+
+.Bio a {
+  font-size: 0.8rem;
+}
   
 .Bio img {
   border-radius: 50%;

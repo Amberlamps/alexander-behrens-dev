@@ -1,0 +1,12 @@
+.container {
+  font-family: 'Literata', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 5px #2B2D42 solid;
+  padding-left: 1rem;
+}
+
+.tldr {
+  font-size: 1.8rem;
+  margin: 0rem 0.5rem;
+}
