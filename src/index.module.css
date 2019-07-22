@@ -54,3 +54,7 @@
   margin-top: 0;
   margin-bottom: 1.75rem;
 }
+
+:global img {
+  max-width: 100%;
+}
